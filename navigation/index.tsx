@@ -48,7 +48,7 @@ function RootNavigator() {
             flexDirection:'row',
             width:60,
             justifyContent:'space-between',
-    
+            
             }}>
             <AntDesign name="search1" size={24} color="white"/>
             </View>
