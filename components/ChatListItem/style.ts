@@ -8,6 +8,9 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between',
         padding:5 
     },
+    midContainer:{
+
+    },
     leftContainer:{
         flexDirection: 'row'
     },
