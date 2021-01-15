@@ -10,6 +10,8 @@ import { RootStackParamList } from '../types';
 import MainTabNavigator from './MainTabNavigator';
 import LinkingConfiguration from './LinkingConfiguration';
 import ChatRoomScreen from '../screens/ChatRoomScreen';
+import Contacts from '../screens/ContactsScreen';
+import ContactsScreen from '../screens/ContactsScreen';
 
 // If you are not familiar with React Navigation, we recommend going through the
 // "Fundamentals" guide: https://reactnavigation.org/docs/getting-started
@@ -33,12 +35,12 @@ function RootNavigator() {
     <Stack.Navigator screenOptions={{
       headerStyle:{
         backgroundColor:"#f40940",
-        
       },
       headerTitleAlign: 'center',
       headerTitleStyle:{
         fontWeight: '200',
         fontSize: 18,
+        color:'white'
       }
      }}>
       <Stack.Screen name="Root" component={MainTabNavigator}
@@ -86,7 +88,11 @@ function RootNavigator() {
          )
        })} 
        />
-
+      <Stack.Screen
+       name="Contacts"
+       component={ContactsScreen}
+      options={{ title: 'Contacts' }} />
+   
       <Stack.Screen name="NotFound" component={NotFoundScreen} options={{ title: 'Oops!' }} />
     </Stack.Navigator>
   );

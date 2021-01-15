@@ -23,7 +23,7 @@ export default function MainTabNavigator() {
       tabBarOptions={{
          activeTintColor: Colors[colorScheme].tint,
          style:{
-           backgroundColor:"#f4aa09"
+           backgroundColor:"#141730",
          },
          indicatorStyle:{
            backgroundColor: "#fff",
@@ -31,7 +31,8 @@ export default function MainTabNavigator() {
          },
          labelStyle:{
            fontWeight: 'bold',
-           fontSize: 12
+           fontSize: 12,
+           color: 'white'
          } ,
          showIcon: true
         }}>
@@ -39,7 +40,7 @@ export default function MainTabNavigator() {
         name="Camera"
         component={ChatScreen}
         options={{
-          tabBarIcon: ({ color }) => <Fontisto name="camera" color={color} size = {20}/>,
+          tabBarIcon: ({ color }) => <Fontisto name="camera" color={'white'} size = {20}/>,
           tabBarLabel: () => null
         }}
       />

@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-dusknet-dev-203659-authRole",
+      "UnauthRoleArn": "arn:aws:iam::382325892257:role/amplify-dusknet-dev-203659-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::382325892257:role/amplify-dusknet-dev-203659-authRole",
+      "Region": "ap-south-1",
+      "DeploymentBucketName": "amplify-dusknet-dev-203659-deployment",
+      "UnauthRoleName": "amplify-dusknet-dev-203659-unauthRole",
+      "StackName": "amplify-dusknet-dev-203659",
+      "StackId": "arn:aws:cloudformation:ap-south-1:382325892257:stack/amplify-dusknet-dev-203659/2728e930-5743-11eb-9dca-0605fb2a3cb2",
+      "AmplifyAppId": "d3gydplynd07rt"
+    }
+  }
+}
