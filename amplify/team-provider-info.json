@@ -10,6 +10,11 @@
       "StackName": "amplify-dusknet-dev-203659",
       "StackId": "arn:aws:cloudformation:ap-south-1:382325892257:stack/amplify-dusknet-dev-203659/2728e930-5743-11eb-9dca-0605fb2a3cb2",
       "AmplifyAppId": "d3gydplynd07rt"
+    },
+    "categories": {
+      "auth": {
+        "dusknet69de0f1d": {}
+      }
     }
   }
 }

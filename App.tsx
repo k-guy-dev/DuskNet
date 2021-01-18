@@ -8,20 +8,35 @@ import Navigation from './navigation';
 
 import Amplify from 'aws-amplify'
 import config from './src/aws-exports'
-Amplify.configure(config)
 
-export default function App() {
+Amplify.configure({
+  ...config,
+  Analytics: {
+    disabled: true,
+  },
+});
+import { withAuthenticator } from 'aws-amplify-react-native'
+
+//import SignIn from "./components/AuthComponents/SignIn"
+
+
+function App() {
   const isLoadingComplete = useCachedResources();
   const colorScheme = useColorScheme();
+
+  
 
   if (!isLoadingComplete) {
     return null;
   } else {
+    
     return (
       <SafeAreaProvider>
-        <Navigation colorScheme={colorScheme} />
+        <Navigation colorScheme = {colorScheme}/>
         <StatusBar />
       </SafeAreaProvider>
     );
   }
 }
+
+export default withAuthenticator(App)

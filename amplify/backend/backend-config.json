@@ -1,1 +1,10 @@
-{}
+{
+  "auth": {
+    "dusknet69de0f1d": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  }
+}
