@@ -23,7 +23,6 @@ export default function ContactsScreen() {
           graphqlOperation(listUsers)
         )
         setUsers(usersData.data.listUsers.items);
-        console.log(usersData)
       } catch (error) {
         console.log(error);
       }
